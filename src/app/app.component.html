@@ -2,5 +2,8 @@
 <div style="text-align:center">
   <example-header [inputMsg]="'hi'" [isLink]="true"></example-header>
   <example-header [inputMsg]="'hi'" [isLink]="false"></example-header>
+  <h2 *ngFor="let x of stringList">
+    {{ x }}
+  </h2>
 </div>
 

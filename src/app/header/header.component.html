@@ -1,3 +1,8 @@
 <h1>
-  <app-link [url]="linkUrl" [label]="linkLabel"></app-link>
+  <div *ngIf="isLink">
+      <app-link [url]="linkUrl" [label]="text"></app-link>
+  </div>
+  <div *ngIf="!isLink">
+    {{text}}
+  </div>
 </h1>

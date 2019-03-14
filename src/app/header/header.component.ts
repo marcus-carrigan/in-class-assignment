@@ -8,9 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Input() inputMsg: string;
+  @Input() isLink: boolean;
 
   linkUrl: string = "some-url";
-  linkLabel: string = "some label";
+  text: string = "some label";
 
   constructor() { }
 
